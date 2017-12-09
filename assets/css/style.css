@@ -1,0 +1,27 @@
+body {
+  background-color: tan
+
+}
+.Container{
+
+
+}
+.header {
+  background-image: url("assets/images/hangman-banner.png");
+
+
+}
+
+.section {
+  float: left;
+}
+
+p {
+  text-align: center;
+  font-size: 30px;
+  font:
+}
+
+#word-blank {
+  text-align: center;
+}
