@@ -12,7 +12,8 @@ var wrongGuesses = [];
 
 var winCounter = 0;
 var lossCounter = 1;
-var numGuesses = 15;
+var numGuesses =7;
+var source = "assets/images/" 
 
 function startGame(){
 /*
@@ -31,6 +32,7 @@ blanksAndSuccesses = [];
 
 chosenWord = wordList[Math.floor(Math.random() * wordList.length)];
 lettersInChosenWord = chosenWord.split("");
+
 numBlanks = lettersInChosenWord.length;
 console.log(chosenWord);
 console.log(numBlanks)
@@ -107,8 +109,8 @@ function roundComplete(){
     console.log(blanksAndSuccesses);
     if(lettersInChosenWord.join(" ") === blanksAndSuccesses.join(" ")){
         winCounter++;
-        alert("You win!!");
         document.getElementById('win-counter').innerHTML = winCounter;
+        alert("You win!!");
         startGame();
     }else if(numGuesses === 0){
         document.getElementById('loss-counter').innerHTML  = lossCounter ++;
